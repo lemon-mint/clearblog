@@ -33,7 +33,7 @@ var config = func() map[string]string {
 	return config
 }()
 
-//Template wraper
+//Template wrapper
 type Template struct {
 	templates *template.Template
 }
