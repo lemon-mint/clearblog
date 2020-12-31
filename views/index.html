@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="{{.PageTitle}}"/>
+    <meta property="og:title" content="{{.PageTitle}}" />
+    {{if .Description}}
+    <meta name="description" content="{{.Description}}" />
+    {{end}}
     <title>{{.PageTitle}}</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/material-components-web@9.0.0/dist/material-components-web.min.css"
+        integrity="sha256-jcnb7kltefqSCmKy6qn6gL9JETFrismeLsFvwKdIo4c=" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/material-components-web@9.0.0/dist/material-components-web.min.js"
+        integrity="sha256-oFKwCP6dNAYZz1ZE5XzpbJ0eT2vco7uWZempgTGwuYQ=" crossorigin="anonymous"></script>
+    <script src="/public/mdc.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=IBM+Plex+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/public/main.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <button class="mdc-button">
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label">Button</span>
+        </button>
+    </div>
 </body>
+
 </html>

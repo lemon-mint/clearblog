@@ -49,13 +49,14 @@ func main() {
 	}
 	e := echo.New()
 	e.Renderer = t
-	e.Static("/static", "public")
+	e.Static("/public", "public")
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(
 			200,
 			"index.html",
 			map[string]interface{}{
-				"PageTitle": config["site.title"],
+				"PageTitle":   config["site.title"],
+				"Description": config["site.description"],
 			},
 		)
 	})
