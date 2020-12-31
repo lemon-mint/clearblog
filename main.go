@@ -57,6 +57,7 @@ func main() {
 			map[string]interface{}{
 				"PageTitle":   config["site.title"],
 				"Description": config["site.description"],
+				"Category":    []string{"Go", "Rust", "python"},
 			},
 		)
 	})
