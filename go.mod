@@ -1,6 +1,6 @@
 module github.com/lemon-mint/clearblog
 
-go 1.15
+go 1.18
 
 require (
 	github.com/RoaringBitmap/roaring v0.5.5 // indirect
